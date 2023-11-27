@@ -1,0 +1,16 @@
+def isperfect(x):
+  sum = 0
+  for i in range(1,x):
+    if x%i == 0:
+      sum += i
+
+  if sum == x:
+    is_perfect = True
+  else:
+    is_perfect = False
+
+  return is_perfect
+
+numb = int(input("Enter a number : "))
+
+isperfect(numb)
