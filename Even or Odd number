@@ -1,0 +1,11 @@
+def oddeven(o):
+  even = 0
+  if o%2==0:
+    even = 1
+  if even == 1:
+    print("Even")
+  else:
+    print("Odd")
+
+n = int(input("Enter a number : "))
+oddeven(n)
