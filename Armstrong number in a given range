@@ -1,0 +1,20 @@
+def isarmstrong(a,b):
+  for i in range(a,b+1):
+    temp = i
+    len_ = len(str(temp))
+    sum = 0
+  
+    while i>0:
+      dig = i%10
+      power = dig**len_
+      sum += power
+      i = i//10
+
+    if sum == int(temp):
+      print(int(temp))
+    
+
+num1 = int(input("Enter lower number : "))
+num2 = int(input("Enter higher number : "))
+
+isarmstrong(num1,num2)
