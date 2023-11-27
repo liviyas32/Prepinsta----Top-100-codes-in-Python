@@ -1,0 +1,16 @@
+def isabundant(r):
+  factsum = 0
+  for i in range(1,r):
+    if r%i == 0:
+      factsum += i
+  
+  if factsum > r:
+    is_abundant = True
+  else:
+    is_abundant = False
+
+  return is_abundant
+
+inp = int(input("Enter a number : "))
+
+isabundant(inp)
