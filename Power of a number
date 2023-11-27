@@ -1,0 +1,11 @@
+def power(n,p):
+  power = n**p
+  return power
+
+
+input = input("Enter number and power value separated by space : ").split()
+
+num = int(input[0])
+pow = int(input[1])
+
+power(num,pow)
