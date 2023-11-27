@@ -1,0 +1,17 @@
+def prime_num(a,b):
+
+  for val in range(a,b+1):
+    prime_list = []
+    non_prime_list = []
+    is_prime = 1
+    for i in range(2,val):
+      if val%i == 0:
+        is_prime = 0
+
+    if is_prime == 1:      
+      print(val)
+    
+num1 = int(input("Enter lower range : "))
+num2 = int(input("Enter higher range : "))
+
+prime_num(num1,num2)
