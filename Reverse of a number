@@ -1,0 +1,11 @@
+def reverse(o):
+  rev = 0
+  while o>0:
+    digit = o%10
+    rev = (rev*10)+digit
+    o = o//10
+  return rev
+
+n = int(input("Enter a number : "))
+
+reverse(n)
