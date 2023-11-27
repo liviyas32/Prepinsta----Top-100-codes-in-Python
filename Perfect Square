@@ -1,0 +1,14 @@
+def issquare(q):
+  issquare = 0
+  sq = q**0.5
+  if q%sq == 0:
+    issquare = 1
+
+  if issquare == 1:
+    print("Perfect Square")
+  else:
+    print("Not Perfect Square")
+
+t = int(input("Enter a number : "))
+
+issquare(t)
