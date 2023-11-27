@@ -1,0 +1,12 @@
+def factorial(f):
+  fact = 1
+  count = 1
+  while count <= f:
+    fact *= count
+    count += 1
+
+  return fact
+
+num = int(input("Enter a number : "))
+
+factorial(num)
