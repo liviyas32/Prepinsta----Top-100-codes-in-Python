@@ -1,0 +1,10 @@
+def sum_range(a,b):
+  sum = 0
+  for i in range(a,b+1):
+    sum +=i
+  return sum
+
+num1 = int(input("Enter lower range : "))
+num2 = int(input("Enter higher range : "))
+
+sum_range(num1,num2)
