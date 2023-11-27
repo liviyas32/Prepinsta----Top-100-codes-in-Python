@@ -1,0 +1,10 @@
+def isautomorphic(e):
+  sqe = e**2
+  if e%10 == sqe%10:
+    print("Automorphic")
+  else:
+    print("Not Automorphic")
+
+val = int(input("Enter a number : "))
+
+isautomorphic(val)
