@@ -1,0 +1,18 @@
+def ispalindrome(p):
+  temp = p
+  reversed = 0
+  while p>0:
+    dig = p%10
+    reversed = (reversed*10)+dig
+    p = p//10
+
+  if temp == reversed:
+    is_palindrome = True
+  else:
+    is_palindrome = False
+  
+  return is_palindrome
+
+num = int(input("Enter a number : "))
+
+ispalindrome(num)
