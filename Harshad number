@@ -1,0 +1,19 @@
+def isharshad(w):
+  temp = w
+  sum = 0
+
+  while w > 0:
+    dig = w%10
+    sum +=dig
+    w //=10
+
+  if temp%sum == 0:
+    is_harshad = True
+  else:
+    is_harshad = False
+
+  return is_harshad
+
+inp = int(input("Enter a number : "))
+
+isharshad(inp)
