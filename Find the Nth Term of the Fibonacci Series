@@ -1,0 +1,15 @@
+def fibonacci_term(f):
+  count = 0
+  a,b = 0,1
+
+  while count < f-2:
+    c = a+b
+    a = b
+    b = c
+    count +=1
+
+  return c
+
+num = int(input("Enter a number : "))
+
+fibonacci_term(num)
