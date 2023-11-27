@@ -1,0 +1,21 @@
+def isarmstrong(a):
+  temp = a
+  len_ = len(str(temp))
+  sum = 0
+  #extract digit
+  while a>0:
+    dig = a%10
+    power = dig**len_
+    sum += power
+    a = a//10
+
+  if sum == int(temp):
+    is_armstrong = True
+  else:
+    is_armstrong = False
+
+  return is_armstrong
+
+num = int(input("Enter a number : "))
+
+isarmstrong(num)
