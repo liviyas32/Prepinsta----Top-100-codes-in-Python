@@ -1,0 +1,8 @@
+def sum_natural(o):
+  sum = 0
+  for i in range(o+1):
+    sum +=i
+  return sum
+
+n = int(input("Enter a number : "))
+sum_natural(n)
