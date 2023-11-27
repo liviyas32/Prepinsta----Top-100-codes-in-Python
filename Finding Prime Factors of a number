@@ -1,0 +1,22 @@
+def prime_factors(y):
+  factors = []
+  prime_factors = []
+
+  for i in range(2, y+1):
+    if y%i == 0:
+      factors.append(i)
+
+  for j in factors:
+    is_prime = 1
+    for i in range(2,j):
+      if j%i == 0:
+        is_prime = 0
+    if is_prime == 1:
+      prime_factors.append(j)
+      print(j)
+
+  #return prime_factors
+
+value = int(input("Enter a number : "))
+
+prime_factors(value)
