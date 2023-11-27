@@ -1,0 +1,12 @@
+def numtype(o):
+  if o >=0:
+    if o==0:
+      print("Zero")
+    else:
+      print("Positive")
+  else:
+    print("Negative")
+
+
+n = int(input("Enter a number : "))
+numtype(n)
