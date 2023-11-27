@@ -1,0 +1,16 @@
+def fibonacci(f):
+  count = 0
+  a,b = 0,1
+  print(a)
+  print(b)
+
+  while count < f-2:
+    c = a+b
+    print(c)
+    a = b
+    b = c
+    count += 1
+
+num = int(input("Enter a number : "))
+
+fibonacci(num)
