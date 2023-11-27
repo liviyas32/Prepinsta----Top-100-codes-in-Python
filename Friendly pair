@@ -1,0 +1,23 @@
+def isfriendlypair(vals):
+  out = []
+  for val in vals:
+    factsum = 0
+    for i in range(1,val):
+      if val%i == 0:
+        factsum += i 
+    if factsum%val == 0:
+      out.append("True")
+    else:
+      out.append("False")
+
+  if out[0] == out[1]:
+    is_friendly = True
+  else:
+    is_friendly = False
+
+  return is_friendly
+
+values = input("Enter the number separated by space : ").split()
+values = list(map(int, values))
+
+isfriendlypair(values)
